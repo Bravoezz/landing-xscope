@@ -7,7 +7,7 @@ const Values = () => {
   return (
     <div className="relative h-screen bg-red-900 flex items-end justify-center">
       <UnicValues />
-
+<h1>new change</h1>
       <Image
         className="absolute w-full top-0 left-0"
         src="/lines.svg"
