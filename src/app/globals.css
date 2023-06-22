@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0px;
+  padding: 0px;
 }
+
+.font {
+  /* font-family: Inter; */
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.weight{
+  font-weight: 700;
+}
+/* style={{backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: 1}} */
+#banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-image:linear-gradient(to right,rgba(70, 97, 233, 1) 15%, rgba(70, 97, 233, 0.2)), url("../../public/bannerh.png");
+  /* -gradient(to right,rgba(70, 97, 233, 1), rgba(70, 97, 233, 0.2),); */
+  position: relative;
+}
+
+#banner .wage {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+
+
