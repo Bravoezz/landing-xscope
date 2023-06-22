@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Navbar from './Components/Navbar'
 import Banner from './Components/Banner'
 import Values from './Components/Values'
+import ValuesTwo from './Components/ValuesTwo'
 
 export default function Home() {
     
@@ -16,7 +16,10 @@ export default function Home() {
       </div>
       <div className='h-24'>
       </div>
+      <div id="about">
       <Values />
+     <ValuesTwo />
+      </div>
       <div className='h-24 bg-slate-500'>
       </div>
       
