@@ -1,9 +1,19 @@
-import React from 'react'
+"use client";
+import React, { ReactNode } from "react";
 
-const UnicValues = () => {
-  return (
-    <div>UnicValues</div>
-  )
+interface UnicValuesProps {
+  children: ReactNode;
+  value?: string;
+  valueDetail?: string;
+  cls:string;
 }
 
-export default UnicValues
+const UnicValues = ({ children,value,valueDetail,cls }: UnicValuesProps) => {
+  return <div className="flex flex-col items-center justify-between" >
+    {children}
+    <p className="mb-[8px] value">{value}</p>
+    <p className={`${cls} typografy `}>{valueDetail}</p>
+    </div>;
+};
+
+export default UnicValues;
