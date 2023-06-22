@@ -8,7 +8,7 @@ const Values = () => {
     const flex = "flex justify-center items-center";
 
   return (
-    <div className="relative py-10 w-full gap-16 flex items-end justify-center ">
+    <div className="relative py-10 w-full gap-16 flex items-end justify-center mb-[50px]">
       <UnicValues cls="eff" value="Efficiency" valueDetail="Efficient distribution of time and material resources for the project, making expedient decisions, resulting in the development of a competitive software product. It is one of the basic principles of VironIT.">
         <div className={`circle-value-pink h-[112px] w-[112px] ${flex} mb-[24px]`}>
           <Image className="z-30 "  src={Eficiency} width={48} height={48} alt="profesionalism"/>
