@@ -16,6 +16,7 @@ const ValuesTwo = () => {
           </p>
         </div>
 
+
         <div className=" relative flex justify-center items-center stwo">
           <Image
             className="rounded-xl"
