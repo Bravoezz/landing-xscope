@@ -13,7 +13,9 @@ const Banner = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
       className="shadow-[0_4px_8px_0_rgba(245, 62, 62, 0.40)] shadow-md bg-[#F9546D] rounded-[56px] h-[40px] w-[144px] text-white ">
+        <a href="#contact">
         Contact Us
+        </a> 
       </motion.button>
     </div>
   );
