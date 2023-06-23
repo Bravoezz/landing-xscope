@@ -27,7 +27,7 @@ export default function Home() {
      <ValuesTwo />
      <Carousel />
       </div>
-     <div id="services" className='mb-[75px]'>
+     <div id="services" className='mb-[40px]'>
       <OurServices />
      </div>
      <div id='offer' className='mb-[90px]'>

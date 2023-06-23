@@ -51,7 +51,7 @@ const OurServices = () => {
     },
   ];
   return (
-    <div className="relative w-full py-10 flex items-start gap-10 justify-center">
+    <div className="relative w-full py-10 h-[522px] flex items-start gap-10 justify-center">
       <div className="acordion  ">
         {data?.map((item) => {
           return (
