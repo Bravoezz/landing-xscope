@@ -7,11 +7,12 @@ import Image from 'next/image'
 import OurServices from './Components/OurServices'
 import WhatWeOffter from './Components/WhatWeOffter'
 import Portafolio from './Components/Portafolio'
+import ContactUs from './Components/ContactUs'
 
 export default function Home() {
     
   return (
-    <main className="flex flex-col justify-between ">
+    <main id='home' className="flex flex-col justify-between ">
       <div className='h-screen'id='banner'>
       <Navbar />
       <Banner />
@@ -33,8 +34,16 @@ export default function Home() {
      <div id='offer' className='mb-[90px]'>
       <WhatWeOffter />
       </div>
-      <div id='portfolio'>
+
+      <div id='portfolio' className='mb-[160px]'>
       <Portafolio />
+      </div>
+      <div id='contact'>
+        <ContactUs />
+      </div>
+
+      <div className='h-[500px]'>
+
       </div>
       
       
