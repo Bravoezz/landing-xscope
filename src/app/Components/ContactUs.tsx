@@ -23,7 +23,7 @@ const ContactUs = () => {
         }))
       }
   return (
-    <div className="flex relative items-end  gap-20 py-[75px] justify-center">
+    <div className="flex relative items-end min-[320px]:flex-wrap min-[320px]:justify-center gap-20 py-[75px] justify-center">
       <div className="flex flex-col justify-between items-start">
         <small className="sm block">Our</small>
         <div className="flex flex-col items-start gap-0 mb-[16px] justify-center">

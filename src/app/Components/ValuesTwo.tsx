@@ -4,7 +4,7 @@ import Image from "next/image";
 const ValuesTwo = () => {
   return (
     <div>
-      <div className="relative flex justify-center pb-20 mb-[90px] gap-5 items-center">
+      <div className="relative min-[320px]:flex-wrap min-[320px]:justify-center flex justify-center pb-20 mb-[90px] gap-5 items-center">
         <div className="text-software">
           <small className="sm">XSCOPE</small>
           <p className="sf mb-[20px]">Software Development Company.</p>

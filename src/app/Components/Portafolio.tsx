@@ -44,10 +44,10 @@ const Portafolio = () => {
           Portfolio
         </p>
       </div>
-      <div className="flex flex-row items-center justify-between gap-[32px]">
+      <div className="flex flex-row items-center min-[320px]:flex-wrap min-[320px]:justify-center justify-between gap-[32px]">
         {
             data?.map(item => {
-                return <div className="flex w-[280px] h-[408px] flex-col rounded-[16px] items-start px-[24px] justify-center  gap-1 shadow-portafolio">
+                return <div className="flex w-[280px] h-[408px] flex-col rounded-[16px] items-start px-[24px] hover:scale-95 transition-all ease-in justify-center  gap-1 shadow-portafolio">
                     <div className="w-[232px] h-[168px] rounded-t-xl bg-[#E7E8FF] flex items-center justify-center">
                     <Image src={item.img} alt={item.title} width={item.md[0]} height={item.md[1]} />
                     </div>

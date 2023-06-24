@@ -9,15 +9,20 @@ const Navbar = () => {
     const styleNavigation = "text-center text-white cursor-pointer"
     const active = "font-bold underline decoration-[#F9546D]"
   return (
-      <div className="w-full z-50 backdrop-blur-sm fixed top-0 right-0 h-[72px] px-16 bg-[#16215866] flex justify-between items-center ">
+      <div className="w-full z-50 md:flex md:items-center md:justify-between backdrop-blur-sm fixed top-0 right-0 h-[72px] px-16 bg-[#16215866]  ">
+       <div>
         <Image width={100} height={180} src={"/logosxscope.png"} alt="logo" />
-        <div className="flex gap-10">
-        <Link smooth={true} offset={-430} duration={500} to="home" onClick={() => setState("home")} className={`${styleNavigation} ${state === "home" && active}`}>Home</Link>
-        <Link smooth={true} offset={-430} duration={500} to="about" onClick={()=> setState("about")} className={`${styleNavigation} ${state === "about" && active}`}>About us</Link>
-        <Link smooth={true} offset={-430} duration={500} to="services" onClick={()=> setState("services")} className={`${styleNavigation} ${state === "services" && active}`}>Our services</Link>
-        <Link smooth={true} offset={-430} duration={500} to="offer" onClick={()=> setState("offer")} className={`${styleNavigation} ${state === "offer" && active}`}>What-we-offer</Link>
+       </div>
+       <div className="min-[940px]:hidden">
+        hola
+       </div>
+        <div className="min-[940px]:flex min-[940px]:flex-row min-[940px]:gap-10 hidden ">
+        <Link smooth={true} offset={-430} duration={500} to="home" onClick={() => setState("home")} className={`${styleNavigation}  ${state === "home" && active}`}>Home</Link>
+        <Link smooth={true} offset={-430} duration={500} to="about" onClick={()=> setState("about")} className={`${styleNavigation}  ${state === "about" && active}`}>About us</Link>
+        <Link smooth={true} offset={-430} duration={500} to="services" onClick={()=> setState("services")} className={`${styleNavigation}  ${state === "services" && active}`}>Our services</Link>
+        <Link smooth={true} offset={-430} duration={500} to="offer" onClick={()=> setState("offer")} className={`${styleNavigation}  ${state === "offer" && active}`}>What-we-offer</Link>
         <Link smooth={true} offset={-430} duration={500} to="portfolio" onClick={()=> setState("portfolio")} className={`${styleNavigation} ${state === "portfolio" && active} `}>Portfolio</Link>
-        <Link smooth={true} offset={-430} duration={500} to="contact" onClick={()=> setState("contact")} className={`${styleNavigation} ${state === "contact" && active}`}>Contact us</Link>
+        <Link smooth={true} offset={-430} duration={500} to="contact" onClick={()=> setState("contact")} className={`${styleNavigation}  ${state === "contact" && active}`}>Contact us</Link>
         </div>
       </div>
   );
