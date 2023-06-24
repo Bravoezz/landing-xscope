@@ -53,9 +53,9 @@ const OurServices = () => {
   return (
     <div className="relative w-full py-10 h-[522px] flex items-start gap-10 justify-center">
       <div className="acordion  ">
-        {data?.map((item) => {
+        {data?.map((item,index) => {
           return (
-            <div className="flex mb-[8px] flex-col items-center justify-between gap-2">
+            <div key={index} className="flex mb-[8px] flex-col items-center justify-between gap-2">
               <div
                 key={item.id}
                 className="w-[450px] bg-[#E7E8FF] rounded-[16px] px-[24px] h-[48px] flex items-center justify-between"
@@ -84,9 +84,9 @@ const OurServices = () => {
                    className="w-[402px]">
                     <p className="text-[12px] mb-2">{item.detail}</p>
                     <ul>
-                      {item?.list?.map((item) => {
+                      {item?.list?.map((item,index:number) => {
                         return (
-                          <li className="text-[12px] ">
+                          <li key={index} className="text-[12px] ">
                             <strong>.</strong> {item}
                           </li>
                         );

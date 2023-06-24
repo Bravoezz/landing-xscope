@@ -9,7 +9,7 @@ const Navbar = () => {
     const styleNavigation = "text-center text-white cursor-pointer"
     const active = "font-bold underline decoration-[#F9546D]"
   return (
-      <div className="w-full backdrop-blur-sm fixed top-0 right-0 h-[72px] px-16 bg-[#16215866] flex justify-between items-center ">
+      <div className="w-full z-50 backdrop-blur-sm fixed top-0 right-0 h-[72px] px-16 bg-[#16215866] flex justify-between items-center ">
         <Image width={100} height={180} src={"/logosxscope.png"} alt="logo" />
         <div className="flex gap-10">
         <Link smooth={true} offset={-430} duration={500} to="home" onClick={() => setState("home")} className={`${styleNavigation} ${state === "home" && active}`}>Home</Link>

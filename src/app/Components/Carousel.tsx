@@ -8,8 +8,8 @@ const Carousel = () => {
     <div className="relative">
       <div className="slider pb-10">
       <div className="slider-track mb-4">
-        {lvlUno?.map((im) => (
-            <div className="slide">
+        {lvlUno?.map((im,index) => (
+            <div key={index} className="slide">
               <Image
                 className="rounded-xl h-full"
                 src={im}
@@ -20,8 +20,8 @@ const Carousel = () => {
         ))}
         </div>
       <div className="slider-track1 mb-4">
-        {lvlDos?.map((im) => (
-            <div className="slide">
+        {lvlDos?.map((im,index) => (
+            <div key={index} className="slide">
               <Image
                 className="rounded-xl "
                 src={im}
@@ -32,8 +32,8 @@ const Carousel = () => {
         ))}
         </div>
       <div className="slider-track2 mb-4">
-        {lvlTres?.map((im) => (
-            <div className="slide">
+        {lvlTres?.map((im,index) => (
+            <div key={index} className="slide">
               <Image
                 className="rounded-xl "
                 src={im}
