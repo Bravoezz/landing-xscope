@@ -26,7 +26,7 @@ const ValuesTwo = () => {
             alt="sphot"
           />
           <Image
-            className="absolute top-9 rounded-xl left-5 z-20"
+            className="absolute top-9 rounded-xl left-5 "
             src="/lap.svg"
             width={160}
             height={104}
