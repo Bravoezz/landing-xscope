@@ -18,13 +18,16 @@ const ValuesTwo = () => {
 
 
         <div className=" relative flex justify-center items-center stwo">
+          <div className="max-w-[240px] max-h-[328px]">
           <Image
-            className="rounded-xl"
+            className="rounded-xl object-contain"
             src="/womeninlap.svg"
-            width={240}
-            height={328}
+            fill={true}
+            // width={240}
+            // height={328}
             alt="sphot"
-          />
+            />
+            </div>
           <Image
             className="absolute top-9 rounded-xl left-5 "
             src="/lap.svg"
