@@ -24,13 +24,13 @@ const ContactUs = () => {
       }
   return (
     <div className="flex relative items-end min-[320px]:flex-wrap min-[320px]:justify-center gap-20 py-[75px] justify-center">
-      <div className="flex flex-col justify-between items-start">
+      <div className="flex flex-col justify-between max-[540px]:items-center items-start">
         <small className="sm block">Our</small>
         <div className="flex flex-col items-start gap-0 mb-[16px] justify-center">
           <p className="text-[#4661E9] ts font-black text-[28px]">Lets Talk</p>
           <p className="text-[#4661E9] ts font-black text-[28px]">Business!</p>
         </div>
-        <small className="text-[12px] mb-[16px] w-[336px] h-[40px] flex flex-col">
+        <small className="text-[12px] mb-[16px] w-[336px] h-[40px] max-[540px]:text-center flex flex-col">
           Lorem ipsum dolor sit amet, conse tetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore dolor
         </small>
@@ -42,20 +42,20 @@ const ContactUs = () => {
           width={100}
         />
       </div>
-      <div className="w-[500px] flex flex-col gap-2 items-center mb-7 justify-center">
-        <div className="flex flex-row items-center gap-4 justify-between">
-        <div className="flex gap-2 flex-col">
+      <div className="max-w-[500px] max-[580px]:w-[300px] flex flex-col gap-2 items-center mb-7 justify-center">
+        <div className="flex flex-row max-[580px]:block max-[580px]:mb-4 items-center gap-4 justify-between">
+        <div className="flex w-full  max-[580px]:mb-4 gap-2 flex-col">
             <label className="font-semibold" htmlFor="name">Name</label>
-            <input onChange={handleChange} value={emailCli.name} placeholder="..."  className="midle" type="text" name="name" id="name" />
+            <input onChange={handleChange} value={emailCli.name} placeholder="..."  className="midle max-[580px]:w-[300px]" type="text" name="name" id="name" />
         </div>
         <div className="flex gap-2 flex-col">
             <label className="font-semibold" htmlFor="email">Email</label>
-            <input onChange={handleChange} value={emailCli.email} placeholder="..."  className="midle" type="text" name="email" id="email" />
+            <input onChange={handleChange} value={emailCli.email} placeholder="..."  className="midle  max-[580px]:w-[300px]" type="text" name="email" id="email" />
         </div>
         </div>
-        <div className="mb-[56px] gap-2 flex flex-col">
+        <div className="mb-[56px] w-full gap-2 flex flex-col">
             <label className="font-semibold" htmlFor="msg">Message</label>
-            <textarea className="desc"  onChange={handleChange} value={emailCli.msg} placeholder="Description" name="msg" id="msg" />
+            <textarea className="desc w-full"  onChange={handleChange} value={emailCli.msg} placeholder="Description" name="msg" id="msg" />
         </div>
       <motion.a
       transition={{ease:"easeIn"}}
@@ -65,7 +65,7 @@ const ContactUs = () => {
       </div>
 
       <Image
-          className="absolute left-52 top-0 -z-30"
+          className="absolute left-52 max-[540px]:left-1 top-0 -z-30"
           src="/contac-us.svg"
           alt="contact"
           height={96}

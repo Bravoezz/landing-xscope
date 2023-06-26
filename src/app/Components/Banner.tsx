@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div className="ml-[188px] mt-[200px] flex flex-col items-start">
+    <div className="ml-[188px] max-[800px]:ml-[20px] mt-[200px] flex flex-col items-start">
       <small className="text-white mb-5">XSCOPE</small>
-      <h1 className="font-bold w-[576px] flex flex-col justify-center text-[44px] leading-[50px] mb-10 text-white">
+      <h1 className="font-bold max-w-[576px] flex flex-col justify-center max-[800px]:text-3xl  text-[44px] leading-[50px] mb-10 text-white">
         Software Consulting and Development for your Digital Success.
       </h1>
       <motion.button 

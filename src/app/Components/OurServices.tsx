@@ -52,13 +52,13 @@ const OurServices = () => {
   ];
   return (
     <div className="relative w-full py-10 min-[320px]:flex-wrap h-[522px] flex items-start gap-10 justify-center">
-      <div className="acordion  ">
+      <div className="  ">
         {data?.map((item,index) => {
           return (
             <div key={index} className="flex mb-[8px] flex-col items-center justify-between gap-2">
               <div
                 key={item.id}
-                className="w-[450px] bg-[#E7E8FF] rounded-[16px] px-[24px] h-[48px] flex items-center justify-between"
+                className="w-[450px] max-[540px]:w-[350px] bg-[#E7E8FF] rounded-[16px] px-[24px] h-[48px] flex items-center justify-between"
               >
                 <p className="font-bold text-[14px] text-[#4661E9]">
                   {item.title}
@@ -81,7 +81,7 @@ const OurServices = () => {
                   initial={{ opacity: 0, y: -20  }}
                   animate={{ opacity: 1, y: 0 }}
                 //   exit={{ opacity: 0}}
-                   className="w-[402px]">
+                   className="w-[402px] max-[540px]:w-[350px]">
                     <p className="text-[12px] mb-2">{item.detail}</p>
                     <ul>
                       {item?.list?.map((item,index:number) => {
@@ -99,12 +99,12 @@ const OurServices = () => {
           );
         })}
       </div>
-      <div className="text-software">
+      <div className="text-software max-[540px]:flex flex-col items-center ">
         <small className="sm">Our Services</small>
-        <p className="sff mb-[20px]">
+        <p className="sff mb-[20px] max-[540px]:text-2xl max-[540px]:text-center">
           We Provide Agile Software Development Services
         </p>
-        <p className="sf-text">
+        <p className="sf-text max-[540px]:w-[300px] max-[540px]:text-center max-[540px]:text-2x">
           Based on many years of experience, we know that every business has a
           different software and hardware environment. That is why we provide a
           wide range of software development services. Check out the key
@@ -119,7 +119,7 @@ const OurServices = () => {
         alt="diff"
       />
       <Image
-        className="absolute -top-10 left-56 -z-30"
+        className="absolute -top-10 max-[800px]:left-0 max-[800px]:w-[300px] left-56 -z-30"
         width={435}
         height={100}
         src={"/dotstree.svg"}
