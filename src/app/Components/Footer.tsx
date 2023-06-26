@@ -7,7 +7,7 @@ const Footer = () => {
     const stl: string = "text-white cursor-pointer font-bold text-[16px]";
   return (
     <>
-      <div className="w-full h-[328px] flex items-center justify-center gap-40 bg-[#4661E9]">
+      <div className="w-full h-[328px] flex items-center justify-center min-[500px]:gap-20 flex-wrap bg-[#4661E9]">
         <div className="flex flex-row items-center gap-28 justify-center">
           <div className="flex flex-col gap-10 items-start justify-center">
             <Image
@@ -23,18 +23,19 @@ const Footer = () => {
               estimates.
             </p>
           </div>
-          <div className="flex flex-col items-start gap-3 justify-center">
+          <div className="flex flex-col max-[1025px]:hidden items-start gap-3 justify-center">
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="home">Home</Link>
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="about">About us</Link>
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="contact">Contact us</Link>
           </div>
-          <div className="flex flex-col items-start gap-3 justify-center">
+        </div>
+        <div className="flex flex-row items-center  justify-between gap-20">
+          <div className="flex max-[1025px]:hidden flex-col items-start gap-3 justify-center">
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="services">Our services</Link>
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="offer">What-we-offer</Link>
             <Link className={`${stl}`} smooth={true} offset={-430} duration={500} to="portfolio">Portfolio</Link>
             </div>
-        </div>
-        <div className="flex flex-row items-center justify-center gap-2">
+            <div className="flex flex-row items-center px-10 justify-between gap-3">
         <Image
             width={24}
             height={24}
@@ -53,6 +54,8 @@ const Footer = () => {
         src={"/fb.svg"}
         alt="logo"
             />
+            </div>
+
         </div>
       </div>
       <div className="h-[56px]  flex justify-center text-white text-[14px] items-center bg-[#F9546D]">
